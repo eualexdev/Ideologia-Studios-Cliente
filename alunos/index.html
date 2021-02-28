@@ -4,57 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000">
-    <title>Ideologia Studios | Login</title>
+    <title>Platforma de Alunos</title>
+    <script>
+        if (localStorage.getItem("isLog") != 'yes'){
+            location.assign("/login/index.html")
+        }
 
-
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-    <link rel="stylesheet" href="./main.css">
-
+    </script>
 </head>
 <body>
-    <!-- centro -->
-    <div class='login'>
-        <form method="post" action="#">
-            <h1>Bem Vindo!</h1>
-            <input type="text" placeholder="Usuário">
-            <input type="password" placeholder="Senha">
-            <button>Login</button>
-            <a target="_blank" class='more' href="https://api.whatsapp.com/send?phone=+55838708-9243&text=Ol%C3%A1%20@Ideologia%20Studios">Saiba Mais</a>
-            <!-- <h3></h3> -->
-        </form>
-    </div>
-    <!-- rodapé -->
-    <footer>
-        <div class="year--div">
-            <p><strong class="yeartext">Este site Precisa de Javascript para Funciona</strong></p>
-            <div class="suport">
-                <a href="" class="icons"><strong><i class='fab fa-instagram'></i></strong></a>
-                <a href="" class="icons"><strong><i class='fab fa-facebook'></i></strong></a>
-                <a href="" class="icons"><strong><i class='fab fa-whatsapp'></i></strong></a>
-            </div>
-        </div>
-       <script>
-           const year = new Date().getFullYear()
-           document.querySelector("strong[class='yeartext']").innerHTML = "2021 - "+year
-       </script>
-       <script>
-            const inputs = document.querySelectorAll("input")
-            if (screen.width <= 1024 && screen.height <= 1366){
-                inputs[0].addEventListener("focus",() => {
-                    document.querySelector('footer').style.display = "none"
-                })
-                inputs[1].addEventListener("focus",() => {
-                    document.querySelector('footer').style.display = "none"
-                })
-            }
-            inputs[0].addEventListener("blur",() => {
-                document.querySelector('footer').style.display = "block"
-            })
-            inputs[1].addEventListener("blur",() => {
-                document.querySelector('footer').style.display = "block"
-            })
-       </script>
-    </footer>
+   <h1></h1>
+   <script>
+        document.querySelector("h1").innerHTML = "Olá, " + String(localStorage.getItem("nome"))
+   </script>
 </body>
 </html>
