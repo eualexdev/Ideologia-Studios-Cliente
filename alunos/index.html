@@ -1,1 +1,57 @@
-<h1>Em dev</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideologia Studios | Login</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+    <!-- centro -->
+    <div class='login'>
+        <form method="post">
+            <h1>Bem Vindo!</h1>
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+            <button>Login</button>
+            <!-- <h3></h3> -->
+        </form>
+    </div>
+    <!-- rodapé -->
+    <footer>
+        <div class="year--div">
+            <p><strong class="yeartext">Este site Precisa de Javascript para Funciona</strong></p>
+            <div class="suport">
+                <a href="" class="icons"><strong><i class='fab fa-instagram'></i></strong></a>
+                <a href="" class="icons"><strong><i class='fab fa-facebook'></i></strong></a>
+                <a href="" class="icons"><strong><i class='fab fa-whatsapp'></i></strong></a>
+            </div>
+        </div>
+       <script>
+           const year = new Date().getFullYear()
+           document.querySelector("strong[class='yeartext']").innerHTML = "2021 - "+year
+       </script>
+       <script>
+            const inputs = document.querySelectorAll("input")
+            if (screen.width <= 1024 && screen.height <= 1366){
+                inputs[0].addEventListener("focus",() => {
+                    document.querySelector('footer').style.display = "none"
+                })
+                inputs[1].addEventListener("focus",() => {
+                    document.querySelector('footer').style.display = "none"
+                })
+            }
+            inputs[0].addEventListener("blur",() => {
+                document.querySelector('footer').style.display = "block"
+            })
+            inputs[1].addEventListener("blur",() => {
+                document.querySelector('footer').style.display = "block"
+            })
+       </script>
+    </footer>
+</body>
+</html>
