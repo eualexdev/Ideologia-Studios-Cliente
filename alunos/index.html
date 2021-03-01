@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Plataforma de Alunos</title>
     <link rel="stylesheet" href="./src/style/index.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 
 
-    <title>Platforma de Alunos</title>
     <script>
         if (localStorage.getItem("isLog") != 'yes'){
             location.assign("/login/index.html")
@@ -29,17 +28,17 @@
     </nav>
     <div class="contener">
         <h1 class='aluno'></h1>
+        <i class="int"></i>
     </div>
    <script>
         const h1Aluno = document.querySelector("h1.aluno")
-        let instrumento;
-        if (localStorage.getItem('instrumento') === "Violão"){
-            instrumento = '<i class="fal fa-guitar"></i>'
-        } else {
-            instrumento = '<i class="fal fa-guitar"></i>'
-        }
         let nome = "Olá, " + String(localStorage.getItem("nome"))
-        h1Aluno.innerHTML = nome + instrumento
+        h1Aluno.innerHTML = nome 
+        if (localStorage.getItem("instrumento") == "Violão"){
+            document.querySelector('i.int').className = "fas fa-guitar int"
+        } else {
+            document.querySelector('i.int').className = "fas fa-facebook int"
+        }
    </script>
 </body>
 </html>
