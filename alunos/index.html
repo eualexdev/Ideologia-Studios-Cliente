@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./src/style/index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+
     <title>Platforma de Alunos</title>
     <script>
         if (localStorage.getItem("isLog") != 'yes'){
@@ -13,9 +18,22 @@
     </script>
 </head>
 <body>
-   <h1></h1>
+    <nav id="navbar" class="navbar">
+        <div class="suport-text">
+            <h1 class="text">Ideologia Studios</h1>
+        </div> 
+            <button class='button-menu'>
+                <i class="fas fa-bars icon"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="contener">
+        <h1 class='aluno'></h1>
+    </div>
    <script>
-        document.querySelector("h1").innerHTML = "Olá, " + String(localStorage.getItem("nome"))
+        const h1Aluno = document.querySelector("h1.aluno")
+        let nome = "Olá, " + String(localStorage.getItem("nome"))
+        h1Aluno.innerHTML = nome
    </script>
 </body>
 </html>
