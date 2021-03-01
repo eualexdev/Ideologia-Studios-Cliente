@@ -305,6 +305,11 @@ class Verify{
             this.jsonUsuario['isLog'] = "yes"
 
         } else {
+            this.jsonUsuario["nome"] = ""
+            this.jsonUsuario["instrumento"] = ""
+            this.jsonUsuario["nivel"] = ""
+            this.jsonUsuario['isLog'] = ""
+            
             h3deErros.id='erros--actived'
             h3deErros.innerHTML = "Usuario ou Senha incoretos"
         }
