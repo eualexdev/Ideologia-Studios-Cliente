@@ -23,7 +23,7 @@
             <h1 class="text">Ideologia Studios</h1>
         </div> 
             <button class='button-menu'>
-                <i class="fas fa-bars icon"></i>
+                <i class="far fa-bars icon"></i>
             </button>
         </div>
     </nav>
@@ -32,8 +32,14 @@
     </div>
    <script>
         const h1Aluno = document.querySelector("h1.aluno")
+        let instrumento;
+        if (localStorage.getItem('instrumento') === "Violão"){
+            instrumento = '<i class="fal fa-guitar"></i>'
+        } else {
+            instrumento = '<i class="fal fa-guitar"></i>'
+        }
         let nome = "Olá, " + String(localStorage.getItem("nome"))
-        h1Aluno.innerHTML = nome
+        h1Aluno.innerHTML = nome + instrumento
    </script>
 </body>
 </html>

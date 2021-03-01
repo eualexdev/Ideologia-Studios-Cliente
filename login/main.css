@@ -277,7 +277,7 @@ footer{
 }
 
 
-@media (max-width:1920px) and (max-height:33rem){
+/* @media (max-width:1920px) and (max-height:33rem){
     body{
        align-items: center;
     }
@@ -289,4 +289,4 @@ footer{
     footer{
         top: 120%;
     }
-}
+} */
