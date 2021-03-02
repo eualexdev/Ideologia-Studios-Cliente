@@ -92,7 +92,7 @@ h1.aluno{
 }
 
 :root{
-    --var-height-menu:calc(100% - 60px)
+    --var-height-menu:calc(100%)
 }
 
 @keyframes mude-color{
@@ -110,7 +110,7 @@ h1.aluno{
     position: absolute;
     background-color: rgb(0, 0, 0);
     height: var(--var-height-menu);
-    top:60px;
+    top:0px;
     width: 100%;
     opacity: 0.5;
     transition: 0.5s;
@@ -119,9 +119,10 @@ h1.aluno{
 .menu{
     /* display: none; */
     position: absolute;
-    top:60px;
+    top:0px;
     background-color: #000;
     height: var(--var-height-menu);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
     transition: 0.5s;
     width: 15rem;
     left:-100%;
