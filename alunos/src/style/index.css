@@ -101,7 +101,7 @@ h1.aluno{
     }
 
     to {
-        opacity: 0.2;
+        opacity: 0.5;
     }
 }
 
@@ -112,7 +112,7 @@ h1.aluno{
     height: var(--var-height-menu);
     top:60px;
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.5;
     transition: 0.5s;
 }
 
