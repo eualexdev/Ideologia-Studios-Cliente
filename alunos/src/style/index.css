@@ -33,10 +33,33 @@ h1.text{
     font-size: 1.8rem;
     text-align: center;
 }
+.icon{
+    position: relative;
+    background-color: #fff;
+    width: 40px;
+    height: 5px;
+    transition: 1s;
+}
 
-i.icon{
-    font-size:40px;
-    color: rgb(219, 219, 219);
+.icon::before,
+.icon::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 40px;
+    height: 5px;
+}
+
+.icon::before{
+    top: -12px;
+}
+.icon::after{
+    bottom: -12px;
+}
+
+.icon:hover{
+    transform: rotate(90deg);
 }
 
 button.button-menu{
