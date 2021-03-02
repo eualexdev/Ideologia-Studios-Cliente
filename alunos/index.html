@@ -29,6 +29,7 @@
     <div class="contener">
         <h1 class='aluno'></h1>
     </div>
+    <div id="menu-opacity"></div>
     <div id="menu" class="menu">
     </div>
 
@@ -48,6 +49,7 @@
         
 
         let divMenu = document.getElementById('div-menu')
+        let divMenu2 = document.getElementById('menu-opacity')
         let menu = document.getElementById('menu')
         let icon = document.getElementById("icon")
         let icon2 = document.getElementById("icon2")
@@ -56,6 +58,8 @@
         divMenu.addEventListener('click',() => {
             if (countMenu === false){
                 menu.style.left = "0%"
+                divMenu2.style.display = 'revert'
+                divMenu2.style.animation = 'mude-color 0.5s'
                 icon2.style.display = 'revert'
                 icon2.style.animation = 'move-button 0.5s'
                 icon.style.display = 'none'
@@ -65,6 +69,7 @@
                 icon.style.animation = 'move-button 0.5s'
                 icon2.style.display = 'none'
                 menu.style.left = "-100%"
+                divMenu2.style.display = 'none'
                 countMenu = false
             }
         })
