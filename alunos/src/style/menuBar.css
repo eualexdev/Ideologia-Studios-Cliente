@@ -31,12 +31,20 @@
 .user-names{
     background-color: #00a2ff;
     width: 100%;
-    height: 2rem;
+    height: 3rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 #name-text{
     color: #fff;
+    font-size: 30px;
+}
+
+#name-instrumento{
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 173px;
 }

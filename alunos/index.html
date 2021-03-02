@@ -37,14 +37,15 @@
             <i class="fas fa-user user"></i>
         </div>
         <div class='user-names'>
-            <h2 id="name-text">Olá, José Alexsandro</h2>
+            <h2 id="name-text"></h2>
+            <!-- <h2 id="name-instrumento"></h2> -->
         </div>
     </div>
 
 
    <script>
         const h1Aluno = document.querySelector("h1.aluno")
-        let nome = "Olá, " + String(localStorage.getItem("nome"))
+        let nome = "Olá, " + String(localStorage.getItem("nome").split(" ")[0])
         h1Aluno.innerHTML = nome + '!'
 
         var countMenu = false;
@@ -92,5 +93,8 @@
         })
 
    </script>
+
+   <script src="./src/index.js"></script>
+
 </body>
 </html>
