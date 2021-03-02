@@ -31,6 +31,7 @@ h1.text{
     color: #ffffff;
     font-family: 'Permanent Marker', cursive;
     font-size: 1.8rem;
+    text-align: center;
 }
 
 i.icon{
@@ -50,9 +51,11 @@ button.button-menu{
 }
 
 h1.aluno{
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
 }
+
+
 
 .contener{
     margin-left:auto ;
@@ -60,15 +63,36 @@ h1.aluno{
     background-color: rgb(255, 255, 255);
     width: 100%;
     border-bottom: 1px solid #b3b3b3;
-    border-radius:0px 0px 10px 10px ;
     display: flex;
     height: 12em;
     justify-content: center;
     align-items: center;
     transition: 1s;
-    box-shadow: 0px 0px 10px #4b4b4b;
+    /* box-shadow: 0px 0px 10px #4b4b4b; */
 }
 
+:root{
+    --var-height-menu:calc(100% - 60px)
+}
+
+@keyframes move-menu{
+    from{
+        left:-200%;
+    }
+
+    to{
+        left:0%
+    }
+}
+.menu{
+    /* display: none; */
+    position: absolute;
+    top:60px;
+    background-color: #000;
+    height: var(--var-height-menu);
+    transition: 0.5s;
+    left:-100%;
+}
 
 @media (max-width:700px){
     .suport-text{

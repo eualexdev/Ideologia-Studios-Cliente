@@ -21,24 +21,45 @@
         <div class="suport-text">
             <h1 class="text">Ideologia Studios</h1>
         </div> 
-            <button class='button-menu'>
+            <button id='button-menu' class='button-menu'>
                 <i class="far fa-bars icon"></i>
             </button>
         </div>
     </nav>
     <div class="contener">
         <h1 class='aluno'></h1>
-        <i class="int"></i>
     </div>
+    <div id="menu" class="menu">
+    </div>
+
+
    <script>
         const h1Aluno = document.querySelector("h1.aluno")
         let nome = "Olá, " + String(localStorage.getItem("nome"))
-        h1Aluno.innerHTML = nome 
-        if (localStorage.getItem("instrumento") == "Violão"){
-            document.querySelector('i.int').className = "fas fa-guitar int"
-        } else {
-            document.querySelector('i.int').className = "fas fa-facebook int"
+        h1Aluno.innerHTML = nome + '!'
+
+        var countMenu = false;
+        var menos = 20
+
+        if (screen.width <= 1024 && screen.height <= 1366){
+                menos = 50
         }
+        
+
+        let button = document.getElementById('button-menu')
+        let menu = document.getElementById('menu')
+
+        button.addEventListener('click',() => {
+            if (countMenu === false){
+                menu.style.left = "0%"
+                menu.style.width = menos + "%" 
+                countMenu = true
+            } else {
+                menu.style.left = "-100%"
+                countMenu = false
+            }
+        })
+
    </script>
 </body>
 </html>
