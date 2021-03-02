@@ -21,9 +21,9 @@
         <div class="suport-text">
             <h1 class="text">Ideologia Studios</h1>
         </div> 
-            <button id='button-menu' class='button-menu'>
-                <div class="icon"></div>
-            </button>
+        <div id='div-menu' class='div-menu'>
+            <div id="icon" class="far fa-bars"></div>
+            <div id="icon2" class="far fa-times"></div>
         </div>
     </nav>
     <div class="contener">
@@ -39,22 +39,31 @@
         h1Aluno.innerHTML = nome + '!'
 
         var countMenu = false;
-        var menos = 20
+        var menos = 25
+
 
         if (screen.width <= 1024 && screen.height <= 1366){
                 menos  = 75
         }
         
 
-        let button = document.getElementById('button-menu')
+        let divMenu = document.getElementById('div-menu')
         let menu = document.getElementById('menu')
+        let icon = document.getElementById("icon")
+        let icon2 = document.getElementById("icon2")
 
-        button.addEventListener('click',() => {
+
+        divMenu.addEventListener('click',() => {
             if (countMenu === false){
                 menu.style.left = "0%"
-                menu.style.width = menos + "%" 
+                icon2.style.display = 'revert'
+                icon2.style.animation = 'move-button 0.5s'
+                icon.style.display = 'none'
                 countMenu = true
             } else {
+                icon.style.display = 'revert'
+                icon.style.animation = 'move-button 0.5s'
+                icon2.style.display = 'none'
                 menu.style.left = "-100%"
                 countMenu = false
             }
