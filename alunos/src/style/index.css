@@ -117,7 +117,7 @@ h1.aluno{
     transition: 0.5s;
     width: 15rem;
     left:-100%;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 /* @media (max-width:9024px){

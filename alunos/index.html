@@ -38,17 +38,22 @@
         <div class='user-names'>
             <h2 id="name-text"></h2>
         </div>
-        <div class="div-icons">
-            <i class="far fa-home icon-sidbar icon-home"></i><p class='text-icon'>Home</p>
+        <div class="case-menu">
+            <div class="div-icons">
+                <i class="far fa-home icon-sidbar icon-home"></i><p class='text-icon'>Home</p>
+            </div>
+            <div class="div-icons">
+                <i class="far fa-portrait icon-sidbar"></i><p class='text-icon'>Perfil</p>
+            </div>
+            <div class="div-icons">
+                <i class="far fa-school icon-sidbar icon-aulas"></i><p class='text-icon'>Aulas</p>
+            </div>
+            <div class="div-icons">
+                <i class="far fa-book icon-sidbar icon-book"></i><p class='text-icon text-tarefas'>Tarefas</p>
+            </div>
         </div>
-        <div class="div-icons">
-            <i class="far fa-portrait icon-sidbar"></i><p class='text-icon'>Perfil</p>
-        </div>
-        <div class="div-icons">
-            <i class="far fa-school icon-sidbar icon-aulas"></i><p class='text-icon'>Aulas</p>
-        </div>
-        <div class="div-icons">
-            <i class="far fa-book icon-sidbar icon-book"></i><p class='text-icon text-tarefas'>Tarefas</p>
+        <div class="logout" onclick="localStorage.clear();location.reload()">
+            <i class='fas fa-power-off icon-off'></i><p class='off-text'>Sair</p>
         </div>
     </div>
 
