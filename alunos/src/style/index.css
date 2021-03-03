@@ -54,11 +54,8 @@ h1.text{
     transform: 1s;
 }
 
-#icon2 {
-    display: none;
-    font-size: 40px;
-    color: #ffffff;
-    transform: 1s;
+#icon:hover{
+    font-size:35px;
 }
 
 div.div-menu{

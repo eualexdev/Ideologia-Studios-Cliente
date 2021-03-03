@@ -78,8 +78,6 @@
     
         divMenu2.addEventListener('click',() => {
             icon.style.display = 'revert'
-                icon.style.animation = 'move-button 0.5s'
-                icon2.style.display = 'none'
                 menu.style.left = "-100%"
                 divMenu2.style.display = 'none'
                 countMenu = false
@@ -88,9 +86,11 @@
 
         divMenu.addEventListener('click',() => {
             if (countMenu === false){
+                divMenu2.style.display = 'revert'
                 menu.style.left = "0%"
                 countMenu = true
             } else {
+                divMenu2.style.display = 'none'
                 menu.style.left = "-100%"
                 countMenu = false
             }
