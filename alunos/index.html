@@ -76,21 +76,21 @@
         let menu = document.getElementById('menu')
         let icon = document.getElementById("icon")
     
-        // divMenu2.addEventListener('click',() => {
-        //     icon.style.display = 'revert'
-        //         menu.style.left = "-100%"
-        //         divMenu2.style.display = 'none'
-        //         countMenu = false
-        // })
+        divMenu2.addEventListener('click',() => {
+            icon.style.display = 'revert'
+                menu.style.left = "-100%"
+                divMenu2.style.left = "-100%"
+                countMenu = false
+        })
 
 
         divMenu.addEventListener('click',() => {
             if (countMenu === false){
-                divMenu2.style.display = 'revert'
+                divMenu2.style.left = "0px"
                 menu.style.left = "0%"
                 countMenu = true
             } else {
-                divMenu2.style.display = 'none'
+                divMenu2.style.left = "-100%"
                 menu.style.left = "-100%"
                 countMenu = false
             }

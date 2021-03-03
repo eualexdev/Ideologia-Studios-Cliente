@@ -93,25 +93,16 @@ h1.aluno{
     --var-height-menu:calc(100%)
 }
 
-@keyframes mude-color{
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 0.5;
-    }
-}
 
 #menu-opacity{
     /* display: none; */
     position: absolute;
     background-color: rgb(0, 0, 0);
     height: var(--var-height-menu);
-    top:0px;
+    left:-100%;
+    top:0px ;
     width: 100%;
     opacity: 0.5;
-    transition: 0.5s;
 }
 
 .menu{
