@@ -68,6 +68,7 @@ div.div-menu{
     align-items: center;
     width: 60px;
     height: 60px;
+    margin-right:10px ;
 }
 
 h1.aluno{
@@ -120,8 +121,9 @@ h1.aluno{
     /* display: none; */
     position: absolute;
     top:0px;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     height: var(--var-height-menu);
+    border-right: 0.5px solid #b3b3b3;
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
     transition: 0.5s;
     width: 15rem;
