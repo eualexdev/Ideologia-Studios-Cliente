@@ -73,10 +73,26 @@
     font-size: 25px;
     margin-left:6px;
 }
+.icon-home{
+    margin-left:5px;
+}
+
+.icon-book{
+    margin-left:8px;
+}
+
+
 
 .text-icon{
     position: absolute;
     font-size: 22px;
     left:40%;
+    /* text-align: center; */
+}
+
+.text-tarefas{
+    position: absolute;
+    font-size: 22px;
+    left:38%;
     /* text-align: center; */
 }
