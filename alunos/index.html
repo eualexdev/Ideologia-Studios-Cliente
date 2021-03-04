@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <link rel="stylesheet" href="src/style/menuBar.css">
 
+    <meta name = "description" content = "Plataforma de Alunos da Idelogia Studios!">
 
     <script>
         if (localStorage.getItem("isLog") != 'yes'){
@@ -26,19 +27,19 @@
             <div id="icon" class="far fa-bars"></div>
         </div>
     </nav>
-    <div class="contener">
-        <h1 class='aluno'></h1>
-    </div>
-    <div id="menu-opacity"></div>
-    <div id="menu" class="menu">
-        <div class="user-div">
+    <header class="contener">
+        <h2 class='aluno'></h2>
+    </header>
+    <aside id="menu-opacity"></aside>
+    <main id="menu" class="menu">
+        <section class="user-div">
             <i class="fas fa-pencil pencil"></i>
             <i class="fas fa-user user"></i>
-        </div>
-        <div class='user-names'>
+        </section>
+        <section class='user-names'>
             <h2 id="name-text"></h2>
-        </div>
-        <div class="case-menu">
+        </section>
+        <section class="case-menu">
             <div class="div-icons">
                 <i class="far fa-home icon-sidbar icon-home"></i><p class='text-icon'>Home</p>
             </div>
@@ -51,15 +52,21 @@
             <div class="div-icons">
                 <i class="far fa-book icon-sidbar icon-book"></i><p class='text-icon text-tarefas'>Tarefas</p>
             </div>
-        </div>
-        <div class="logout" onclick="localStorage.clear();location.reload()">
-            <i class='fas fa-power-off icon-off'></i><p class='off-text'>Sair</p>
-        </div>
-    </div>
+            <div class="final-menu">
+                <div class="configs">
+                    <i class='fas fa-cog icon-cog'></i><p class='cog-text'>Configurações
+                    </p>
+                </div>
+                <div class="logout" onclick="localStorage.clear();location.reload()">
+                    <i class='fas fa-power-off icon-off'></i><p class='off-text'>Sair</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
    <script>
-        const h1Aluno = document.querySelector("h1.aluno")
+        const h1Aluno = document.querySelector("h2.aluno")
         let nome = "Olá, " + String(localStorage.getItem("nome").split(" ")[0])
         h1Aluno.innerHTML = nome + '!'
 

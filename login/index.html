@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000">
+
+    <meta name = "description" content = "Login Para a Plataforma de Alunos da Idelogia Studios!">
+
     <title>Ideologia Studios | Login</title>
 
     <link rel="shortcut icon" href="../assets/img/Logo-256x256.png" type="image/x-icon">
@@ -20,49 +23,51 @@
 </head>
 <body>
     <!-- centro -->
-    <div class='login'>
+    <header class='login'>
         <section>
             <h1>Bem Vindo!</h1>
-            <input id='user' type="text" placeholder="Usuário">
-            <input id="pass" type="password" placeholder="Senha">
+            <form>
+                <input class='user' type="text" placeholder="Usuário">
+                <input class="pass" type="password" placeholder="Senha">
+            </form>
             <button>Login</button>
-            <a target="_blank" class='more' href="https://api.whatsapp.com/send?phone=+55838708-9243&text=Ol%C3%A1%20@Ideologia%20Studios">Saiba Mais</a>
+            <a target="_blank" class='more' href="https://api.whatsapp.com/send?phone=+55838708-9243&text=Ol%C3%A1%20@Ideologia%20Studios" rel="noreferrer">Saiba Mais</a>
             
-            <h3 id="erros"></h3>
+            <h2 id="erros"></h2>
         </section>
-    </div>
+    </header>
     <!-- rodapé -->
     <footer>
         <div class="year--div">
             <p><strong class="yeartext">Este site Precisa de Javascript para Funciona</strong></p>
             <div class="suport">
-                <a target="_blank" href="https://www.instagram.com/ideologia_studios/" class="icons"><strong><i class='fab fa-instagram'></i></strong></a>
-                <a target="_blank" href="https://www.facebook.com/pg/Ideologia-Studios-2450620518412483/posts/" class="icons"><strong><i class='fab fa-facebook'></i></strong></a>
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=+55838708-9243&text=Ol%C3%A1%20@Ideologia%20Studios" class="icons"><strong><i class='fab fa-whatsapp'></i></strong></a>
+                <a target="_blank" href="https://www.instagram.com/ideologia_studios/" class="icons" rel="noreferrer"><i class='fab fa-instagram'></i></a>
+                <a target="_blank" href="https://www.facebook.com/pg/Ideologia-Studios-2450620518412483/posts/" class="icons" rel="noreferrer"><i class='fab fa-facebook'></i></a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=+55838708-9243&text=Ol%C3%A1%20@Ideologia%20Studios" class="icons" rel='noreferrer'><i class='fab fa-whatsapp'></i></a>
             </div>
         </div>
-        <script>
-            const year = new Date().getFullYear()
-           document.querySelector("strong[class='yeartext']").innerHTML = "2021 - "+year
-       </script>
-       <script>
-           const inputs = document.querySelectorAll("input")
-            if (screen.width <= 1024 && screen.height <= 1366){
-                inputs[0].addEventListener("focus",() => {
-                    document.querySelector('footer').style.display = "none"
-                })
-                inputs[1].addEventListener("focus",() => {
-                    document.querySelector('footer').style.display = "none"
-                })
-            }
-            inputs[0].addEventListener("blur",() => {
-                document.querySelector('footer').style.display = "block"
-            })
-            inputs[1].addEventListener("blur",() => {
-                document.querySelector('footer').style.display = "block"
-            })
-            </script>
     </footer>
+    <script>
+        const year = new Date().getFullYear()
+        document.querySelector("strong[class='yeartext']").innerHTML = "2021 - "+year
+    </script>
+    <script>
+        const inputs = document.querySelectorAll("input")
+        if (screen.width <= 1024 && screen.height <= 1366){
+            inputs[0].addEventListener("focus",() => {
+                document.querySelector('footer').style.display = "none"
+            })
+            inputs[1].addEventListener("focus",() => {
+                document.querySelector('footer').style.display = "none"
+            })
+        }
+        inputs[0].addEventListener("blur",() => {
+            document.querySelector('footer').style.display = "block"
+        })
+        inputs[1].addEventListener("blur",() => {
+            document.querySelector('footer').style.display = "block"
+        })
+        </script>
     <script src="./config.js"></script>
 </body>
 </html>

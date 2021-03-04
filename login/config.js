@@ -1,5 +1,5 @@
 const button = document.querySelector("button")
-const h3deErros = document.getElementById("erros")
+const h2deErros = document.getElementById("erros")
 button.addEventListener('click',() => {
     const v = new Verify()
     const datas = v.get()
@@ -23,17 +23,17 @@ class Verify{
             "nivel":'',
             "isLog":'no'
         }
-        this.user = String(document.getElementById("user").value).toLowerCase()
-        this.pass = String(document.getElementById("pass").value).toLowerCase()
+        this.user = String(document.querySelector("input.user").value).toLowerCase()
+        this.pass = String(document.querySelector("input.pass").value).toLowerCase()
     }
 
     get(){
         if(this.user == "" || this.pass == ""){
-            h3deErros.id='erros--actived'
-            h3deErros.innerHTML = "  Preencha todos os Campos  "
+            h2deErros.id='erros--actived'
+            h2deErros.innerHTML = "  Preencha todos os Campos  "
         } else {
-            h3deErros.id='erros'
-            h3deErros.innerHTML = ""
+            h2deErros.id='erros'
+            h2deErros.innerHTML = ""
             return this.anality()
         }
     }
@@ -310,8 +310,8 @@ class Verify{
             this.jsonUsuario["nivel"] = ""
             this.jsonUsuario['isLog'] = ""
             
-            h3deErros.id='erros--actived'
-            h3deErros.innerHTML = "Usuario ou Senha incoretos"
+            h2deErros.id='erros--actived'
+            h2deErros.innerHTML = "Usuario ou Senha incoretos"
         }
         return this.jsonUsuario
     }

@@ -33,8 +33,16 @@
     border: 0px;
 }
 
+.pencil{
+    color: #f5f5f5;
+    position: absolute;
+    top: 5px;
+    left: 92%;
+    font-size: 15px;
+}
+
 :root{
-    --case-height:calc(100% - 15rem);
+    --case-height:calc(100% - 12rem);
 }
 
 .case-menu{
@@ -100,31 +108,15 @@
     /* text-align: center; */
 }
 
-.logout{
-    background-color: #ffffff;
-    position: absolute;
-    display: flex;
-    top:calc((100% - 3rem) - 1px);
-    border-top:1px solid #b3b3b3 ;
+.final-menu{
+    border-top: 1px solid #b3b3b3;
     width: 100%;
-    align-items: center;
+    height: auto;
+}
+.configs{
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
     height: 3rem;
-    transition: 1s;
-}
-
-.logout:hover{
-    background-color: #f5f5f5;
-}
-
-.icon-off{
-    color:#ff0000;
-    font-size: 28px;
-    margin-left: 5px;
-}
-.off-text{
-    position: absolute;
-    margin-left:40% ;
-    font-size: 25px;
-    color: #ff0000;
 }

@@ -69,14 +69,14 @@ div.div-menu{
     margin-right:10px ;
 }
 
-h1.aluno{
+h2.aluno{
     font-size: 50px;
     text-align: center;
 }
 
 
 
-.contener{
+body > header{
     margin-left:auto ;
     margin-right:auto ;
     background-color: rgb(255, 255, 255);
