@@ -1,0 +1,16 @@
+{
+    "name": "Ideologia-Studios",
+    "short_name": "IStudios",
+    "icons": [
+        {
+            "src": "./assets/img/Logo-256x256.png",
+            "sizes": "144x144"
+        }
+    ],
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "./?homescreen=true",
+    "orientation": "portrait",
+    "theme_color": "#000",
+    "background_color": "#fff"
+}
