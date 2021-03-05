@@ -9,8 +9,8 @@
     ],
     "display": "standalone",
     "scope": "/",
-    "start_url": "./?homescreen=true",
+    "start_url": "/",
     "orientation": "portrait",
     "theme_color": "#000",
-    "background_color": "#fff"
+    "background_color": "#000"
 }

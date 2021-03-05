@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ideologia Studios</title>  
-    
+    <meta name="theme-color" content="#000">
     <link rel="manifest" href="./manifest.json" />
-<script src="./pwa.configs.min.js"></script>
-<script> if (navigator.serviceWorker) { navigator.serviceWorker.register ('./sw.js') } </script
- 
+    <script> 
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker
+                .register("./sw.js", {
+                    scope: "./"
+                })
+                .then(function(reg) {
+                    console.log("[Aplicativo] O trabalhador do serviço foi registrado para o escopo: " + reg.scope);
+                });
+    }
+    </script>
 </head>
 <body>
     <a href="./login/index.html">Ir para Alunos</a>
