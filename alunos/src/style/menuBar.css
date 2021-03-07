@@ -104,7 +104,7 @@
 .text-tarefas{
     position: absolute;
     font-size: 22px;
-    left:38%;
+    left:37%;
     /* text-align: center; */
 }
 
@@ -135,7 +135,7 @@
 .cog-text{
     position: absolute;
     font-size: 22px;
-    left: 27%;
+    left: 25%;
 }
 .logout{
     display: flex;
