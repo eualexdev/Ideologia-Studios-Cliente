@@ -31,7 +31,7 @@
         </div>
     </nav>
     <header class="contener">
-        <h2 class='aluno'></h2>
+        <h2 id="text-aluno" class='aluno'></h2>
     </header>
     <aside id="menu-opacity"></aside>
     <main id="menu" class="menu">
@@ -49,9 +49,10 @@
             </div>
             <div class="colors">
                 <div class="line1">
-                    <button class="color-item"></button>
-                    <button class="color-item"></button>
-                    <button class="color-item"></button>
+                    <button id="black" class="color-item">
+                    </button>
+                    <button id="blue" class="color-item"></button>
+                    <button id="red" class="color-item"></button>
                     <button class="color-item"></button>
                     <button class="color-item"></button>
                     <button class="color-item"></button>
@@ -112,16 +113,16 @@
         </section>
         <section class="case-menu">
             <div class="div-icons">
-                <i class="far fa-home icon-sidbar icon-home"></i><p class='text-icon'>Home</p>
+                <i id="icon-sidbar"  class="far fa-home icon-sidbar icon-home"></i><p class='text-icon'>Home</p>
             </div>
             <div class="div-icons">
-                <i class="far fa-portrait icon-sidbar"></i><p class='text-icon'>Perfil</p>
+                <i  id="icon-sidbar" class="far fa-portrait icon-perfil icon-sidbar"></i><p class='text-icon'>Perfil</p>
             </div>
             <div class="div-icons">
-                <i class="far fa-school icon-sidbar icon-aulas"></i><p class='text-icon'>Aulas</p>
+                <i  id="icon-sidbar" class="far fa-school icon-sidbar icon-aulas"></i><p class='text-icon'>Aulas</p>
             </div>
             <div class="div-icons">
-                <i class="far fa-book icon-sidbar icon-book"></i><p class='text-icon text-tarefas'>Tarefas</p>
+                <i  id="icon-sidbar" class="far fa-book icon-sidbar icon-book"></i><p class='text-icon text-tarefas'>Tarefas</p>
             </div>
             <div class="final-menu">
                 <div class="configs">
@@ -178,6 +179,7 @@
    </script>
 
    <script src="./src/index.js"></script>
+   <script src="./src/siteColors.js"></script>
 
 </body>
 </html>

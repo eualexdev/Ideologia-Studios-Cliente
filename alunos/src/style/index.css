@@ -60,7 +60,7 @@ h1.text{
 }
 
 div.div-menu{
-    background-color: #000000;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;

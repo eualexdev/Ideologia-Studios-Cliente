@@ -79,13 +79,13 @@
     font-size: 30px;
     margin-left:10px;
 }
+.icon-home{
+    margin-left:5px;
+}
 
 .icon-aulas{
     font-size: 25px;
     margin-left:6px;
-}
-.icon-home{
-    margin-left:5px;
 }
 
 .icon-book{
@@ -99,6 +99,7 @@
     font-size: 22px;
     left:40%;
     /* text-align: center; */
+    
 }
 
 .text-tarefas{
@@ -122,6 +123,7 @@
     padding-top: 8px;
     padding-bottom: 8px;
     transition: 1s;
+    color: #000000;
 }
 
 .configs:hover{
@@ -135,7 +137,7 @@
 .cog-text{
     position: absolute;
     font-size: 22px;
-    left: 25%;
+    left: 26%;
 }
 .logout{
     display: flex;
