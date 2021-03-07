@@ -1,6 +1,6 @@
 var color = localStorage.getItem("color")
 if (color === null){
-    localStorage.setItem("color","#000")
+    localStorage.setItem("color","black")
 }
 var color = localStorage.getItem("color")
 
