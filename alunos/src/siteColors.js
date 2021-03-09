@@ -41,6 +41,8 @@ try{
 
 let ColorButton = document.querySelectorAll("button.color-item")
 
+// cores populares
+
 let blackColorButton = document.getElementById("black")
 blackColorButton.addEventListener("click",() => {
     if(localStorage.getItem("color") != "black"){
@@ -63,6 +65,24 @@ let redColorButton = document.getElementById("red")
 redColorButton.addEventListener("click",() => {
     if(localStorage.getItem("color") != "red"){
         localStorage.setItem("color","red")
+        // redColorButton.innerHTML = '<i class="fas fa-check check"></i>'
+        location.reload()
+    } 
+})
+
+let orangeColorButton = document.getElementById("orange")
+orangeColorButton.addEventListener("click",() => {
+    if(localStorage.getItem("color") != "orange"){
+        localStorage.setItem("color","orange")
+        // redColorButton.innerHTML = '<i class="fas fa-check check"></i>'
+        location.reload()
+    } 
+})
+
+let greenColorButton = document.getElementById("green")
+greenColorButton.addEventListener("click",() => {
+    if(localStorage.getItem("color") != "green"){
+        localStorage.setItem("color","green")
         // redColorButton.innerHTML = '<i class="fas fa-check check"></i>'
         location.reload()
     } 

@@ -55,7 +55,7 @@
     background-color: #fff;
     width:10%;
     height: 32px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 0px;
     outline: none;
     display: flex;
     align-items: center;
@@ -85,12 +85,257 @@
 
 #black{
     background-color: black;
+    border: 1px solid black;
+}
+
+#black2{
+    background-color: rgb(15, 15, 15);
+    border: 1px solid rgb(15, 15, 15);
+}
+
+#black3{
+    background-color: rgb(25, 25, 25);
+    border: 1px solid rgb(25, 25, 25);
+}
+
+#black4{
+    background-color: rgb(35, 35, 35);
+    border: 1px solid rgb(35, 35, 35);
+}
+
+#black5{
+    background-color: rgb(45, 45, 45);
+    border: 1px solid rgb(45, 45, 45);
+}
+
+#black6{
+    background-color: rgb(55, 55, 55);
+    border: 1px solid rgb(55, 55, 55);
+}
+
+#black7{
+    background-color: rgb(65, 65, 65);
+    border: 1px solid rgb(65, 65, 65);
+}
+
+#black8{
+    background-color: rgb(75, 75, 75);
+    border: 1px solid rgb(75, 75, 75);
+}
+
+#black9{
+    background-color: rgb(85, 85, 85);
+    border: 1px solid rgb(85, 85, 85);
+}
+
+#black10{
+    background-color: rgb(95, 95, 95);
+    border: 1px solid rgb(95, 95, 95);
 }
 
 #blue{
     background-color: blue;
+    border: 1px solid blue;
+}
+
+#blue2{
+    background-color: rgb(0, 15, 255);
+    border: 1px solid rgb(0, 15, 255);
+}
+
+#blue3{
+    background-color: rgb(0, 25, 255);
+    border: 1px solid rgb(0, 25, 255);
+}
+
+#blue4{
+    background-color: rgb(0, 35, 255);
+    border: 1px solid rgb(0, 35, 255);
+}
+
+#blue5{
+    background-color: rgb(0, 45, 255);
+    border: 1px solid rgb(0, 45, 255);
+}
+
+#blue6{
+    background-color: rgb(0, 55, 255);
+    border: 1px solid rgb(0, 55, 255);
+}
+
+#blue7{
+    background-color: rgb(0, 65, 255);
+    border: 1px solid rgb(0, 65, 255);
+}
+
+#blue8{
+    background-color: rgb(0, 75, 255);
+    border: 1px solid rgb(0, 75, 255);
+}
+
+#blue9{
+    background-color: rgb(0, 85, 255);
+    border: 1px solid rgb(0, 85, 255);
+}
+#blue10{
+    background-color: rgb(0, 95, 255);
+    border: 1px solid rgb(0, 95, 255);
 }
 
 #red{
-    background-color: rgb(255, 0, 0);
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+#red2{
+    background-color: rgb(255, 15, 15);
+    border: 1px solid rgb(255, 15, 15);
+
+}
+
+#red3{
+    background-color: rgb(255, 25, 25);
+    border: 1px solid rgb(255, 25, 25);
+
+}
+
+#red4{
+    background-color: rgb(255, 35, 35);
+    border: 1px solid rgb(255, 35, 35);
+
+}
+
+#red5{
+    background-color: rgb(255, 45, 45);
+    border: 1px solid rgb(255, 45, 45);
+
+}
+
+#red6{
+    background-color: rgb(255, 55, 55);
+    border: 1px solid rgb(255, 55, 55);
+}
+
+#red7{
+    background-color: rgb(255, 65, 65);
+    border: 1px solid rgb(255, 65, 65);
+}
+
+#red8{
+    background-color: rgb(255, 75, 75);
+    border: 1px solid rgb(255, 75, 75);
+}
+
+#red9{
+    background-color: rgb(255, 85, 85);
+    border: 1px solid rgb(255, 85, 85);
+}
+
+#red10{
+    background-color: rgb(255, 95, 95);
+    border: 1px solid rgb(255, 95, 95);
+}
+
+#orange{
+    background-color: orange;
+    border: 1px solid orange;
+}
+
+#orange2{
+    background-color: rgb(255, 175, 0);
+    border: 1px solid rgb(255, 175, 0);
+}
+
+#orange3{
+    background-color: rgb(255, 185, 0);
+    border: 1px solid rgb(255, 185, 0);
+}
+
+#orange4{
+    background-color: rgb(255, 195, 0);
+    border: 1px solid rgb(255, 195, 0);
+}
+
+#orange5{
+    background-color: rgb(255, 205, 0);
+    border: 1px solid rgb(255, 205, 0);
+}
+
+#orange6{
+    background-color: rgb(255, 215, 0);
+    border: 1px solid rgb(255, 215, 0);
+}
+
+#orange7{
+    background-color: rgb(255, 225, 0);
+    border: 1px solid rgb(255, 225, 0);
+}
+
+#orange8{
+    background-color: rgb(255, 235, 0);
+    border: 1px solid rgb(255, 235, 0);
+}
+
+#orange9{
+    background-color: rgb(255, 245, 0);
+    border: 1px solid rgb(255, 245, 0);
+}
+
+#orange10{
+    background-color: rgb(255, 255, 0);
+    border: 1px solid rgb(255, 255, 0);
+}
+
+#green{
+    background-color: rgb(0, 115, 0);
+    border: 1px solid rgb(0, 115, 0);
+}
+
+#green2{
+    background-color: rgb(0, 125, 0);
+    border: 1px solid rgb(0, 125, 0);
+}
+
+#green3{
+    background-color: rgb(0, 135, 0);
+    border: 1px solid rgb(0, 135, 0);
+}
+
+#green4{
+    background-color: rgb(0, 135, 0);
+    border: 1px solid rgb(0, 135, 0);
+}
+
+#green5{
+    background-color: rgb(0, 145, 0);
+    border: 1px solid rgb(0, 145, 0);
+}
+
+#green6{
+    background-color: rgb(0, 155, 0);
+    border: 1px solid rgb(0, 155, 0);
+}
+
+#green6{
+    background-color: rgb(0, 165, 0);
+    border: 1px solid rgb(0, 165, 0);
+}
+
+#green7{
+    background-color: rgb(0, 175, 0);
+    border: 1px solid rgb(0, 175, 0);
+}
+
+#green8{
+    background-color: rgb(0, 185, 0);
+    border: 1px solid rgb(0, 185, 0);
+}
+
+#green9{
+    background-color: rgb(0, 195, 0);
+    border: 1px solid rgb(0, 195, 0);
+}
+#green10{
+    background-color: rgb(0, 205, 0);
+    border: 1px solid rgb(0, 205, 0);
 }
